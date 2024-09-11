@@ -23,7 +23,7 @@ struct Sign_In: View {
                 .scaledToFit()
                 .frame(width: 126, height: 126)
             
-            Text("Sign in")
+            Text("Sign In")
                 .font(.title)
                 .fontDesign(Font.Design.rounded)
                 .padding(.top)
