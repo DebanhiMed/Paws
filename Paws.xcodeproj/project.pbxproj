@@ -12,6 +12,7 @@
 		DFA6C91F2C92025400A1750F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA6C91E2C92025400A1750F /* Assets.xcassets */; };
 		DFA6C9222C92025400A1750F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA6C9212C92025400A1750F /* Preview Assets.xcassets */; };
 		E689A1042C9211FB007526B8 /* Sign In.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A1032C9211FB007526B8 /* Sign In.swift */; };
+		E689A1062C923C15007526B8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A1052C923C15007526B8 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DFA6C91E2C92025400A1750F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA6C9212C92025400A1750F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E689A1032C9211FB007526B8 /* Sign In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In.swift"; sourceTree = "<group>"; };
+		E689A1052C923C15007526B8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				DFA6C91A2C92025300A1750F /* PawsApp.swift */,
 				DFA6C91C2C92025300A1750F /* ContentView.swift */,
 				E689A1032C9211FB007526B8 /* Sign In.swift */,
+				E689A1052C923C15007526B8 /* Test.swift */,
 				DFA6C91E2C92025400A1750F /* Assets.xcassets */,
 				DFA6C9202C92025400A1750F /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA6C91D2C92025300A1750F /* ContentView.swift in Sources */,
+				E689A1062C923C15007526B8 /* Test.swift in Sources */,
 				E689A1042C9211FB007526B8 /* Sign In.swift in Sources */,
 				DFA6C91B2C92025300A1750F /* PawsApp.swift in Sources */,
 			);
