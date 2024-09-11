@@ -28,54 +28,58 @@ struct Sign_In: View {
                 .fontDesign(Font.Design.rounded)
                 .padding(.top)
 
-            VStack(alignment: .leading, spacing: 15) {
-                Text("Email")
-                    .font(.headline)
-                    .foregroundColor(.black)
-                
-                TextField("Email", text: $email)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
-                
-                Text("Password")
-                    .font(.headline)
-                    .foregroundColor(.black)
-                
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                
-                Button(action: {
-                    print("Sign In button tapped")
-                }) {
-                    Text("Sign In")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .padding(.top, 10)
-                
-                Button(action: {
-                    print("Forgot Password tapped")
-                }) {
-                    Text("Forgot password?")
-                        .font(.footnote)
+            Form {
+                VStack(alignment: .leading, spacing: 15) {
+                    Text("Email")
+                        .font(.headline)
                         .foregroundColor(.black)
-                        .underline()
+                    
+                    TextField("Email", text: $email)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
+                    
+                    Text("Password")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                    
+                    Button(action: {
+                        print("Sign In button tapped")
+                    }) {
+                        Text("Sign In")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding(.top, 10)
+                    
+                    Button(action: {
+                        print("Forgot Password tapped")
+                    }) {
+                        Text("Forgot password?")
+                            .font(.footnote)
+                            .foregroundColor(.black)
+                            .underline()
+                    }
+                    .padding(.top, 10)
                 }
-                .padding(.top, 10)
-            }
-            .frame(width: 300)
-            .padding(20)
-            .background(Color.white)
-            .cornerRadius(20)
+                .frame(width: 300)
+                .padding(20)
+                .background(Color.white)
+                .cornerRadius(20)
             .shadow(radius: 10)
+            }
+            .formStyle(.columns)
+            
             Spacer()
             
             HStack {
