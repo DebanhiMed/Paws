@@ -66,7 +66,7 @@ struct Sign_In: View {
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
-                            NavigationLink(destination: Test(), isActive: $isAuthenticated){
+                            NavigationLink(destination: Main(), isActive: $isAuthenticated){
                                 
                             }
                         }

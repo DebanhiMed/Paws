@@ -15,7 +15,8 @@
 		E6101DFE2C933D040024BD6E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6101DFD2C933D040024BD6E /* Main.swift */; };
 		E6101E002C933DC60024BD6E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6101DFF2C933DC60024BD6E /* CardView.swift */; };
 		E689A1042C9211FB007526B8 /* Sign In.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A1032C9211FB007526B8 /* Sign In.swift */; };
-		E689A1062C923C15007526B8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A1052C923C15007526B8 /* Test.swift */; };
+		E696DC662C93551C003BB241 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696DC652C93551C003BB241 /* profileView.swift */; };
+		E696DC682C935539003BB241 /* addView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696DC672C935539003BB241 /* addView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		E6101DFD2C933D040024BD6E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		E6101DFF2C933DC60024BD6E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E689A1032C9211FB007526B8 /* Sign In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In.swift"; sourceTree = "<group>"; };
-		E689A1052C923C15007526B8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		E696DC652C93551C003BB241 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		E696DC672C935539003BB241 /* addView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,8 @@
 				DFA6C91A2C92025300A1750F /* PawsApp.swift */,
 				DFA6C91C2C92025300A1750F /* ContentView.swift */,
 				E689A1032C9211FB007526B8 /* Sign In.swift */,
-				E689A1052C923C15007526B8 /* Test.swift */,
+				E696DC652C93551C003BB241 /* profileView.swift */,
+				E696DC672C935539003BB241 /* addView.swift */,
 				E6101DFD2C933D040024BD6E /* Main.swift */,
 				E6101DFF2C933DC60024BD6E /* CardView.swift */,
 				DF056F0E2C923AE7006BFA73 /* SignUp.swift */,
@@ -152,10 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E696DC662C93551C003BB241 /* profileView.swift in Sources */,
 				E6101E002C933DC60024BD6E /* CardView.swift in Sources */,
 				E6101DFE2C933D040024BD6E /* Main.swift in Sources */,
 				DFA6C91D2C92025300A1750F /* ContentView.swift in Sources */,
-				E689A1062C923C15007526B8 /* Test.swift in Sources */,
+				E696DC682C935539003BB241 /* addView.swift in Sources */,
 				DF056F0F2C923AE7006BFA73 /* SignUp.swift in Sources */,
 				E689A1042C9211FB007526B8 /* Sign In.swift in Sources */,
 				DFA6C91B2C92025300A1750F /* PawsApp.swift in Sources */,
