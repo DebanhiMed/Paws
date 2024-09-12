@@ -13,7 +13,7 @@ struct Main: View {
     
     var body: some View {
         ScrollView {
-            Text("Paws")
+            Text("Feed")
                 .font(.system(size: 50))
                 .fontWeight(.bold)
                 .fontDesign(Font.Design.rounded)
