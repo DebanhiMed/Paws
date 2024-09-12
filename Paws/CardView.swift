@@ -45,6 +45,7 @@ struct CardView: View {
         .cornerRadius(20)
         .shadow(radius: 10)
         .padding()
+        Spacer()
     }
 }
 
