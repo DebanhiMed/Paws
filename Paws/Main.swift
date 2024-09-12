@@ -25,8 +25,9 @@ struct Main: View {
         .scrollIndicators(.hidden)
         HStack {
             Spacer()
-            Image(systemName: "house")
-                .resizable()
+            Image(systemName: "house.fill")
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                //.resizable()
                 .scaledToFit()
                 .frame(width: 30)
             Spacer()

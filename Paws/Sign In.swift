@@ -57,17 +57,17 @@ struct Sign_In: View {
                             .background(Color(.systemGray6))
                             .cornerRadius(10)
                         
+                        
                         Button(action: {
                             authenticate()
                         }) {
-                            Text("Sign In")
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
                             NavigationLink(destination: Main(), isActive: $isAuthenticated){
-                                
+                                Text("Sign In")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
                             }
                         }
                         .padding(.top, 10)
@@ -104,7 +104,9 @@ struct Sign_In: View {
                     }) {
                         Text("Don't have an account?")
                             .font(.footnote)
-                        Text("Create one.")
+                        NavigationLink(destination: SignUp()){
+                            Text("Create one.")
+                        }
                     }
                     .font(.footnote)
                     .foregroundStyle(Color.black)
