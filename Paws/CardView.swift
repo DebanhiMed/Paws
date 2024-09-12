@@ -8,33 +8,36 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    let card : CardModel
+    
     var body: some View {
         VStack {
             HStack {
-                Image("pawIcon")
+                Image(card.icon)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50)
                 VStack(alignment: .leading) {
-                    Text("IsidroTrevino")
+                    Text(card.name)
                         .font(.subheadline)
-                    Text("@Isidro")
+                    Text(card.username)
                         .font(.subheadline)
                 }
                 Spacer()
             }
-            Image("HE")
+            Image(card.petImage)
                 .resizable()
                 .scaledToFit()
                 
             HStack {
-                Text("Monterrey, Nuevo León")
+                Text(card.place)
                     .font(.caption)
                 Spacer()
-                Text("12/09/2024")
+                Text(card.date)
                     .font(.caption)
             }
-            Text("Un gatito muy bonito llamado he perdido por mi casa el dia de hoy")
+            Text(card.description)
                 .font(.subheadline)
                 .padding(.top, 5)
             Spacer()
@@ -50,5 +53,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView()
+    CardView(card : CardModel.defaultCard)
 }

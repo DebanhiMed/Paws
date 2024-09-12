@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct Main: View {
+    
+    @State var cardVM = CardViewModel()
+    
     var body: some View {
         ScrollView {
             Text("Paws")
                 .font(.system(size: 50))
                 .fontWeight(.bold)
                 .fontDesign(Font.Design.rounded)
-            CardView()
-            CardView()
-            CardView()
-            CardView()
+            ForEach(cardVM.array){
+                c in CardView(card: c)
+            }
+            
         }
         .scrollIndicators(.hidden)
         HStack {
