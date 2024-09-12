@@ -14,6 +14,9 @@ struct Sign_In: View {
     @State private var testEmail = "irdo@tec.mx"
     @State private var testPassword = "Debanhiminobia"
     
+    @State private var showError = false
+    @State private var isAuthenticated = false
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
@@ -31,7 +34,7 @@ struct Sign_In: View {
                     .font(.title)
                     .fontDesign(Font.Design.rounded)
                     .padding(.top)
-
+                
                 Form {
                     VStack(alignment: .leading, spacing: 15) {
                         Text("Email")
@@ -54,15 +57,26 @@ struct Sign_In: View {
                             .background(Color(.systemGray6))
                             .cornerRadius(10)
                         
-                        NavigationLink(destination: Test()) {
+                        Button(action: {
+                            authenticate()
+                        }) {
                             Text("Sign In")
                                 .frame(maxWidth: .infinity)
                                 .padding()
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
+                            NavigationLink(destination: Test(), isActive: $isAuthenticated){
+                                
+                            }
                         }
                         .padding(.top, 10)
+                        
+                        if showError {
+                            Text("Invalid email or password")
+                                .foregroundColor(.red)
+                                .padding(.top, 5)
+                        }
                         
                         Button(action: {
                             print("Forgot Password tapped")
@@ -100,8 +114,18 @@ struct Sign_In: View {
                 }
             }
             .padding(.horizontal)
+            
         }
         Spacer()
+    }
+    
+    func authenticate() {
+        if email == testEmail && password == testPassword {
+            isAuthenticated = true
+            showError = false
+        } else {
+            showError = true
+        }
     }
 }
 
