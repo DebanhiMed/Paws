@@ -43,6 +43,7 @@ struct Main: View {
             Spacer()
         }
         .padding()
+        .navigationBarBackButtonHidden(true)
     }
 }
 

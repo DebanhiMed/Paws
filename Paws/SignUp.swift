@@ -18,10 +18,12 @@ struct SignUp: View {
     @State private var password = ""
     @State private var passwordConf = ""
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ScrollView {
-            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
-                HStack{
+            VStack(alignment: .center) {
+                HStack {
                     Image("pawIcon")
                         .resizable()
                         .scaledToFit()
@@ -41,7 +43,6 @@ struct SignUp: View {
                             .padding()
                             .background(Color(.systemGray6))
                             .cornerRadius(10)
-                            //.keyboardType(.)
                             .autocapitalization(.words)
                         
                         Text("Surname")
@@ -79,18 +80,19 @@ struct SignUp: View {
                         SecureField("Age", text: $age)
                             .padding()
                             .background(Color(.systemGray6))
-                            //.keyboardType(.numberPad)
                             .cornerRadius(10)
                 
                         Button(action: {
                             print("Sign Up button tapped")
                         }) {
-                            Text("Sign Up")
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
+                            NavigationLink(destination: Main()){
+                                Text("Sign Up")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            }
                         }
                         .padding(.top, 10)
                         
@@ -102,7 +104,15 @@ struct SignUp: View {
                     .shadow(radius: 10)
                 }
                 .formStyle(.columns)
-                
+                .navigationBarBackButtonHidden(true)
+                .navigationBarItems(leading: Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text("Sign In")
+                    }
+                })
             }
         }
     }

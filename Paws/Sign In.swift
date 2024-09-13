@@ -102,17 +102,18 @@ struct Sign_In: View {
                     Button(action: {
                         print("Create account button tapped")
                     }) {
-                        Text("Don't have an account?")
-                            .font(.footnote)
                         NavigationLink(destination: SignUp()){
-                            Text("Create one.")
+                            Text("Don't have an account? Create one.")
+                                .font(.footnote)
+                                .underline()
+                                .foregroundStyle(Color.black)
+                            
+                            Image(systemName: "arrow.right")
+                                .padding(.leading, 40)
+                                .foregroundStyle(.black)
                         }
+                        
                     }
-                    .font(.footnote)
-                    .foregroundStyle(Color.black)
-                    
-                    Image(systemName: "arrow.right")
-                        .padding(.leading, 40)
                 }
             }
             .padding(.horizontal)
