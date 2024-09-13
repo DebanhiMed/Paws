@@ -48,7 +48,7 @@ struct addView: View {
                             Text("Municipality")
                                 .font(.headline)
                                 .foregroundColor(.black)
-                            
+                                                        
                             TextField("Municipality", text: $municipality)
                                 .padding()
                                 .background(Color(.systemGray6))
