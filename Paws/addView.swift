@@ -16,7 +16,6 @@ struct addView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // Main Form
                 VStack(alignment: .center) {
                     Text("Paws")
                         .font(.system(size: 50))
@@ -25,13 +24,11 @@ struct addView: View {
                     
                     Form {
                         VStack(alignment: .leading, spacing: 20) {
-                            // Picture Upload Section
                             Text("Picture")
                                 .font(.headline)
                                 .foregroundColor(.black)
                             
                             Button(action: {
-                                // Add picture upload functionality here
                             }) {
                                 HStack {
                                     Text("Upload")
@@ -48,7 +45,6 @@ struct addView: View {
                                 .cornerRadius(10)
                             }
                             
-                            // Municipality Input
                             Text("Municipality")
                                 .font(.headline)
                                 .foregroundColor(.black)
@@ -58,7 +54,6 @@ struct addView: View {
                                 .background(Color(.systemGray6))
                                 .cornerRadius(10)
                             
-                            // Date Input
                             Text("Date")
                                 .font(.headline)
                                 .foregroundColor(.black)
@@ -69,7 +64,6 @@ struct addView: View {
                                 .cornerRadius(10)
                                 .keyboardType(.numbersAndPunctuation)
                             
-                            // Description Input
                             Text("Description")
                                 .font(.headline)
                                 .foregroundColor(.black)
@@ -79,9 +73,9 @@ struct addView: View {
                                 .background(Color(.systemGray6))
                                 .cornerRadius(10)
                             
-                            // Add Button
+
                             Button(action: {
-                                // Add functionality here
+                               
                             }) {
                                 Text("Add")
                                     .frame(maxWidth: .infinity)
@@ -103,7 +97,7 @@ struct addView: View {
                 
                 Spacer()
                 
-                // Menu Section
+
                 HStack {
                     Spacer()
                     Image(systemName: "house.fill")
