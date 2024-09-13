@@ -97,30 +97,10 @@ struct addView: View {
                 
                 Spacer()
                 
-
-                HStack {
-                    Spacer()
-                    Image(systemName: "house.fill")
-                        .scaledToFit()
-                        .frame(width: 30)
-                    Spacer()
-                    Image(systemName: "plus.circle")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 28)
-                        .foregroundColor(.blue)
-                    
-                    Spacer()
-                    Image(systemName: "person")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25)
-                    Spacer()
-                }
-                .padding()
-                .navigationBarBackButtonHidden(true)
+                navBarView()
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

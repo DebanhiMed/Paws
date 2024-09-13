@@ -19,6 +19,7 @@
 		E689A1042C9211FB007526B8 /* Sign In.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A1032C9211FB007526B8 /* Sign In.swift */; };
 		E696DC662C93551C003BB241 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696DC652C93551C003BB241 /* profileView.swift */; };
 		E696DC682C935539003BB241 /* addView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696DC672C935539003BB241 /* addView.swift */; };
+		E696DC6A2C947DC7003BB241 /* navBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696DC692C947DC7003BB241 /* navBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E689A1032C9211FB007526B8 /* Sign In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In.swift"; sourceTree = "<group>"; };
 		E696DC652C93551C003BB241 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		E696DC672C935539003BB241 /* addView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addView.swift; sourceTree = "<group>"; };
+		E696DC692C947DC7003BB241 /* navBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				E696DC652C93551C003BB241 /* profileView.swift */,
 				E696DC672C935539003BB241 /* addView.swift */,
 				E6101DFD2C933D040024BD6E /* Main.swift */,
+				E696DC692C947DC7003BB241 /* navBarView.swift */,
 				E6101DFF2C933DC60024BD6E /* CardView.swift */,
 				DF24704B2C935906009E3127 /* CardViewModel.swift */,
 				DF2470492C9355F4009E3127 /* CardModel.swift */,
@@ -171,6 +174,7 @@
 				DF056F0F2C923AE7006BFA73 /* SignUp.swift in Sources */,
 				E689A1042C9211FB007526B8 /* Sign In.swift in Sources */,
 				DFA6C91B2C92025300A1750F /* PawsApp.swift in Sources */,
+				E696DC6A2C947DC7003BB241 /* navBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
